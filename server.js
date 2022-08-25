@@ -1,6 +1,6 @@
 const io = require('socket.io')(3000, {
 	cors: {
-		origin: true, // true means to use any frontend.
+		origin: "*", // true means to use any frontend.
 	},
 });
 
