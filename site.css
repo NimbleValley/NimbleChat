@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+h1 {
+    display: inline;
+    font-size: 4vh;
+    color: rgb(202, 74, 0)
+}
+
+p {
+    display: inline;
+    font-size: 4vh;
+    color: rgb(182, 108, 23);
+}
+
+div {
+    position: relative;
+    width: 100%;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    border-bottom: #682b19 solid .5vh;
+    background-color: #16120e;
+    font-size: 4vh;
+    padding: .5%;
+    animation: show 250ms ease-in-out;
+}
+
+#message-container {
+    border: none;
+    padding: 0;
+    position: relative;
+    margin-bottom: 20%;
+    width: 100%;
+}
+
+#send-container {
+    width: 100%;
+    position: fixed;
+    bottom: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    height: 9vh;
+}
+
+#message-input {
+    transition-duration: .5s;
+    width: 80%;
+    font-size: 4vh;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    border: #682b19 solid .8vh;
+    background-color: #201a14;
+    color: rgb(182, 108, 23);
+    box-shadow: 0px 0px 2vw black;
+}
+
+#message-input:hover {
+    color: rgb(250, 133, 0);
+    text-shadow: .1vw .1vw rgb(122, 45, 0), .2vw .2vw rgb(97, 3, 0);
+    border: #a34629 solid .8vh;
+}
+
+#send-button {
+    transition-duration: .5s;
+    width:10%;
+    font-size: 5vmin;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    border: #8d3a21 solid .8vh;
+    background-color: #201a14;
+    color: rgb(250, 100, 0);
+    box-shadow: 0px 0px 2vw black;
+}
+
+#send-button:hover {
+    color: rgb(250, 133, 0);
+    text-shadow: .1vw .1vw rgb(196, 72, 0), .2vw .2vw rgb(139, 5, 0);
+    box-shadow: .2vw .2vw rgb(196, 72, 0), .4vw .4vw rgb(139, 5, 0);
+    cursor: pointer;
+}
+
+
+@keyframes show {
+    0% {
+        opacity: .5;
+        transform: scale(0);
+    }
+}
+
+
+
+
+body::-webkit-scrollbar {
+    width: 1vw;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(34, 12, 5);
+    border: 3px solid rgb(201, 122, 19);
+    /* creates padding around scroll thumb */
+}
